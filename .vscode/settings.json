@@ -4,6 +4,7 @@
         "board-config.h": "c",
         "adc-board.h": "c",
         "stm32g071xx.h": "c",
-        "board.h": "c"
+        "board.h": "c",
+        "main.h": "c"
     }
 }
