@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "stm32g0xx.h": "c",
+        "board-config.h": "c",
+        "adc-board.h": "c",
+        "stm32g071xx.h": "c"
+    }
+}

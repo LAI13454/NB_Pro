@@ -51,8 +51,30 @@ Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c \
 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr.c \
 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c \
 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c \
+Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c \
+Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c \
 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c \
-Src/system_stm32g0xx.c
+Src/system_stm32g0xx.c \
+\
+boards/board.c \
+boards/adc-board.c \
+boards/delay-board.c \
+boards/gpio-board.c \
+boards/i2c-board.c \
+boards/rtc-board.c \
+boards/spi-board.c \
+boards/uart-board.c \
+boards/utilities.c \
+\
+system/adc.c \
+system/delay.c \
+system/fifo.c \
+system/gpio.c \
+system/i2c.c \
+system/systime.c \
+system/timer.c \
+system/uart.c \
+
 
 # ASM sources
 ASM_SOURCES =  \
@@ -113,7 +135,9 @@ C_INCLUDES =  \
 -IDrivers/STM32G0xx_HAL_Driver/Inc \
 -IDrivers/STM32G0xx_HAL_Driver/Inc/Legacy \
 -IDrivers/CMSIS/Device/ST/STM32G0xx/Include \
--IDrivers/CMSIS/Include
+-IDrivers/CMSIS/Include \
+-Iboards \
+-Isystem \
 
 
 # compile gcc flags
