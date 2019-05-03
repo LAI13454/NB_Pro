@@ -45,6 +45,11 @@
  */
 Gpio_t Led1;
 
+/*!
+ * KEY GPIO pins objects
+ */
+Gpio_t Key1;
+
 /*
  * MCU objects
  */
@@ -132,6 +137,9 @@ void BoardInitMcu( void )
 
         // LEDs
         GpioInit( &Led1, LED_1, PIN_OUTPUT, PIN_PUSH_PULL, PIN_NO_PULL, 0 );
+
+        // KEYs
+        GpioInit( &Key1, KEY_1, PIN_INPUT, PIN_PUSH_PULL, PIN_NO_PULL, 0);
 
         SystemClockConfig( );
 

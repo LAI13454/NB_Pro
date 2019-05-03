@@ -38,7 +38,8 @@
  * Board MCU pins definitions
  */
 
-#define LED_1                                       PC_1
+#define LED_1                                       PA_5
+#define KEY_1                                       PC_13
 
 #define OSC_LSE_IN                                  PC_14
 #define OSC_LSE_OUT                                 PC_15
